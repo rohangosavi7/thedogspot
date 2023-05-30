@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Dog Spot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- css files -->
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a6da537345.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/upload-pet.css"
+    />
+
+    <!-- Js files -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+    ></script>
+  </head>
+
+  <body>
+
+    <script type="text/javascript" src="js/jquery-3.4.6.min.js"></script>
+    <script>
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+    <!-- scroll to top -->
+
+    <button onclick="topFunction()" id="scrollToTopButton" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- header section -->
+    <div id="header">
+      <script>
+        $(function () {
+          $("#header").load("header.html");
+        });
+      </script>
+    </div>
+
+    <section class="upload-form">
+        <div class="container">
+            <h1>Upload Pet Information</h1>
+            <form id="petForm" >
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact Information</label>
+                <input type="text" id="contact" name="contact" required>
+              </div>
+              <div class="form-group">
+                <label for="petName">Pet's Name</label>
+                <input type="text" id="petName" name="petName" required>
+              </div>
+              <div class="form-group">
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" required>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" name="gender" required>
+              </div>
+              <div class="form-group">
+                <label for="petType">Pet Type</label>
+                <select id="petType" name="petType" required>
+                  <option value="cat">Cat</option>
+                  <option value="dog">Dog</option>
+                  <option value="rabbit">Rabbit</option>
+                </select>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        
+          <script src="js/upload-pet.js"></script>
+    </section>
+
+    <!-- Footer -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <div id="footer">
+      <script>
+        $(function () {
+          $("#footer").load("footer.html");
+        });
+      </script>
+    </div>
+  </body>
+</html>

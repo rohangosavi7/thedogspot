@@ -1,0 +1,75 @@
+*{
+    font-family: 'Open Sans';
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+
+// services plan section  
+.plan .box-container{
+    @include grid(30rem);
+  
+    .box{
+      position: relative;
+      padding:2rem;
+      border-radius: .5rem;
+      position: relative;
+      margin-bottom: 2rem;
+      background: $light-bg;
+  
+      .btn{
+        position: absolute;
+        bottom:-2rem; right:2rem;
+        background: $white;
+      }
+  
+      .title{
+        text-align: center;
+        color:$carrot-color;
+        font-size: 2rem;
+      }
+  
+      .day{
+        text-align: center;
+        color:$black;
+        font-size: 3.5rem;
+      }
+  
+      .icon{
+        color:$carrot-color;
+        font-size: 5rem;
+        padding:2rem 0;
+      }
+  
+      .list{
+        margin:1rem 0;
+  
+        p{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 1.4rem;
+          color:$light-color;
+          padding:1rem 0;
+  
+          span{
+            color:$carrot-color;
+          }
+        }
+      }
+  
+      .amount{
+        font-size: 5rem;
+        font-weight: bolder;
+        color:$black;
+  
+        span{
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  

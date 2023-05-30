@@ -1,0 +1,910 @@
+
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <title>Pet adoption portal-products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- css files -->
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/products.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a6da537345.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Js files -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.6.min.js"></script>
+
+    <script>
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+    <!-- scroll to top -->
+
+    <button onclick="topFunction()" id="scrollToTopButton" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- header section -->
+    <div id="header">
+      <script>
+        $(function () {
+          $("#header").load("header.html");
+        });
+      </script>
+    </div>
+
+    <section class="product-header-bg" id="home">
+      <div class="product-header-col1">
+        <h2>Buy Some Care</h2>
+        <h3
+          class="typewrite"
+          data-period="1000"
+          data-type='["to your pets","to your pets"]'
+        ></h3>
+      </div>
+      <!-- products-header-col1 -->
+      <div class="clear"></div>
+      <!--clear-->
+    </section>
+
+    <!--product-header-bg-->
+
+    <!-- About us -->
+    <div class="product-about" id="hero">
+      <div class="products-about-left">
+        <img src="products/images/dog_food (2).png" alt="" />
+      </div>
+      <div class="products-about-right">
+        <h2 class="heading">We Assure Quality</h2>
+        <h4>
+          Welcome to The Dog Spot's Product Page, where we offer a wide range of
+          high-quality products to meet your pet's needs.
+        </h4>
+        <p>
+          Our commitment to excellence ensures that every item we carry is
+          carefully selected for its quality and suitability. Whether you're
+          looking for nutritious food, comfortable bedding, training tools,
+          grooming supplies, or toys to keep your pet entertained, we have
+          everything you need to provide the best care for your furry friend.
+        </p>
+        <p>
+          <span style="font-weight: 500; color: #000000;">At The Dog Spot, we understand that your pet's well-being is of utmost
+            importance to you.</span>
+          That's why we only stock products that meet our
+          stringent standards for safety and quality. From premium dog food made
+          with wholesome ingredients to durable chew toys and cozy beds, our
+          product selection is designed to enhance your pet's happiness and
+          overall quality of life.
+        </p>
+        <button
+          class="shop-btn"
+          type="button"
+          onclick="window.location.href='#shop-now'"
+        >
+          shop now
+        </button>
+      </div>
+    </div>
+
+    <!-- products -->
+    <section id="shop-now">
+      <div class="products">
+        <h2>Buy Quality <span style="color: #81e752"> FOOD</span></h2>
+        <div class="products-cards">
+          <div class="pr-card">
+            <img id="pr-card-img" src="products/images/product_01.jpg" alt="" />
+            <div class="pr-description">
+              <h3>Chicken Dog meal</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="1"
+                  data-name="Chicken Dog meal"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card">
+            <img id="pr-card-img" src="products/images/product_02.jpg" alt="" />
+            <div class="pr-description">
+              <h3>New zealand air dried BEEF</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 736</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="2"
+                  data-name="New zealand air dried BEEF"
+                  data-price="736"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card">
+            <img id="pr-card-img" src="products/images/product_03.jpg" alt="" />
+            <div class="pr-description">
+              <h3>New zealand air dried LAMB</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 938</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="3"
+                  data-name="New zealand air dried LAMB"
+                  data-price="938"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card">
+            <img id="pr-card-img" src="products/images/product_04.jpg" alt="" />
+            <div class="pr-description">
+              <h3>Good day reward beef</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 1023</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="4"
+                  data-name="Good day reward beef"
+                  data-price="1023"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card">
+            <img id="pr-card-img" src="products/images/product_05.jpg" alt="" />
+            <div class="pr-description">
+              <h3>Norvegian Salmon</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 845</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="5"
+                  data-name="Norvegian Salmon"
+                  data-price="845"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card">
+            <img id="pr-card-img" src="products/images/product_06.jpg" alt="" />
+            <div class="pr-description">
+              <h3>Venison Good day reward</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 785</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="6"
+                  data-name="Venison Good day reward"
+                  data-price="785"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- products cards -->
+      </div>
+
+      <!-- Dog treats and biscuits-->
+      <div class="products">
+        <h2>
+          <span style="color: #16f9cf">Dog Treats</span> and
+          <span style="color: #16f9cf">Biscuits</span>
+        </h2>
+        <div class="products-cards">
+          <!-- card 1 -->
+          <div class="pr-card-tr">
+            <img id="pr-card-img" src="products/images/dog_treat1.png" alt="" />
+            <div class="pr-description">
+              <h3>Pedigree meat jerky</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 567</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="7"
+                  data-name="Pedigree meat jerky"
+                  data-price="567"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-tr">
+            <img id="pr-card-img" src="products/images/dog_treat2.png" alt="" />
+            <div class="pr-description">
+              <h3>Nutri treats immunity support</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 876</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="8"
+                  data-name="Nutri treats immunity support"
+                  data-price="876"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-tr">
+            <img id="pr-card-img" src="products/images/dog_treat3.png" alt="" />
+            <div class="pr-description">
+              <h3>Dental chew care</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 865</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="9"
+                  data-name="Dental chew care"
+                  data-price="865"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-tr">
+            <img id="pr-card-img" src="products/images/dog_treat4.png" alt="" />
+            <div class="pr-description">
+              <h3>Dental chew zest mint</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 903</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="10"
+                  data-name="Dental chew zest mint"
+                  data-price="903"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-tr">
+            <img id="pr-card-img" src="products/images/dog_treat5.png" alt="" />
+            <div class="pr-description">
+              <h3>Yummy in my Tummy</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="11"
+                  data-name="Yummy in my Tummy"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-tr">
+            <img id="pr-card-img" src="products/images/dog_treat6.png" alt="" />
+            <div class="pr-description">
+              <h3>Sara's doggy treats</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 543</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="12"
+                  data-name="Sara's doggy treats"
+                  data-price="543"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  cards -->
+      </div>
+
+      <!-- Pet wellness-->
+      <div class="products">
+        <h2>Pet<span style="color: #ff8067">Wellness</span></h2>
+        <div class="products-cards">
+          <div class="pr-card-wl">
+            <img
+              id="pr-card-img"
+              src="products/images/pet-wellness1.png"
+              alt=""
+            />
+            <div class="pr-description">
+              <h3>Natural Puppy shampoo</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="13"
+                  data-name="Natural Puppy shampoo"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-wl">
+            <img
+              id="pr-card-img"
+              src="products/images/pet-wellness2.png"
+              alt=""
+            />
+            <div class="pr-description">
+              <h3>All natural pet wipes</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="14"
+                  data-name="All natural pet wipes"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-wl">
+            <img
+              id="pr-card-img"
+              src="products/images/pet-wellness3.png"
+              alt=""
+            />
+            <div class="pr-description">
+              <h3>Bamboo slicker brush</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="15"
+                  data-name="Bamboo slicker brush"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-wl">
+            <img
+              id="pr-card-img"
+              src="products/images/pet-wellness4.png"
+              alt=""
+            />
+            <div class="pr-description">
+              <h3>Scavon vet spray</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="16"
+                  data-name="Scavon vet spray"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-wl">
+            <img
+              id="pr-card-img"
+              src="products/images/pet-wellness5.png"
+              alt=""
+            />
+            <div class="pr-description">
+              <h3>Anti tick and flea powder</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="17"
+                  data-name="Anti tick and flea powder"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-card-wl">
+            <img
+              id="pr-card-img"
+              src="products/images/pet-wellness6.png"
+              alt=""
+            />
+            <div class="pr-description">
+              <h3>Ecolife Cat</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the.
+              </p>
+              <h4>Price: 498</h4>
+              <!-- shopping cart -->
+              <div class="product">
+                <button
+                  class="add-to-cart"
+                  data-id="18"
+                  data-name="Ecolife Cat"
+                  data-price="498"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    id="add-to-cart"
+                    style="color: #000000"
+                  ></i>
+                </button>
+
+                <button
+                  class="shop-btn"
+                  type="button"
+                  onclick="window.location.href='payment-page.html'"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  cards -->
+      </div>
+    </section>
+
+    <!-- shoping cart -->
+    <section class="shopping-cart-section">
+      <main>
+        <h2>Your Shopping Cart</h2>
+        <table id="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3"></td>
+              <td>Total:</td>
+              <td id="cart-total">0</td>
+            </tr>
+          </tfoot>
+        </table>
+        <div id="checkout">
+          <a href="#payment-section">
+            <input
+              id="checkout-button"
+              type="button"
+              name="answer"
+              value="Checkout"
+              onclick="showDiv()"
+          /></a>
+        </div>
+      </main>
+    </section>
+
+    <!-- payment section -->
+    <section class="payment-section" id="paymentSection" style="display: none">
+      <h2>Payment Information</h2>
+      <div class="payment-info">
+        <form action="payment-confirmation.html" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" required></textarea>
+          <label for="card">Credit Card Number:</label>
+          <input type="text" id="card" name="card" required />
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" id="expiry" name="expiry" required />
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required />
+          <button id="paynow-button" type="submit" class="button">
+            Pay Now
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script src="products/script.js" type="text/javascript"></script>
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h2 class="footer-header"><span>The</span>DogSpot</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          eius expedita quo itaque at illum, temporibus, error incidunt iure,
+          rerum libero. Voluptas nostrum accusantium ex quia? Architecto minima
+          officiis dolore!
+        </p>
+      </div>
+
+      <div class="footer-centre">
+        <h2 class="footer-header">Get In Touch</h2>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>The Dog Spot</span>Near JSPM college, Hadapsar</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@thedogspot.com">support@thedogspot.com</a>
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:help@thedogspot.com">help@thedogspot.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-nav">
+          <h2 class="footer-header">Popular links</h2>
+          <ul class="footer-nav-list">
+            <!-- Setting the links to #! will ensure that no action takes place on click. -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="adopt-pet.html">Adopt a Pet</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+/* 
+Primary colors 
+orange - #fd7e14
+dark blue - #222429
+*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Open Sans";
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+
+
+/* animations */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+body {
+  background-color:#222429;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*Common clasess*/
+button.common-btn {
+  background: linear-gradient(90deg, #cfb7f1, #fdf4f0);
+  padding: 12px 28px;
+  color: #303030;
+  border: none;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px 0px;
+  transition: all 0.5s ease;
+}
+button.common-btn:hover {
+  background: linear-gradient(90deg, #cfb7f1, #fdf4f0);
+  box-shadow: 3px 2px 30px 3px #d3d3d3;
+  border: 1px #cfb7f1;
+}
+.clear {
+  clear: both;
+}
+.text-center {
+  text-align: center;
+}
+a {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #f2f2f2;
+}
+.heading {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.fade-in {
+  opacity: 0; /* Set the initial opacity to 0 */
+  transition: opacity 1s ease-in-out; /* Add a smooth transition */
+}
+
+.fade-in .visible {
+  opacity: 1; /* Set the opacity to 1 when the div becomes visible */
+}
+
+/* header*/
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+header {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+  z-index: 1;
+  position: relative;
+  height: auto;
+}
+
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style the form inputs */
+input {
+  display: block;
+  padding: 8px;
+  border: 1px solid #242424;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #18eb3b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #00eaea;
+  color: #2a2a2a;
+  box-shadow: 0 0 10px rgba(2, 172, 172, 0.742);
+}
+
+/* Style the payment form container */
+.payment-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(158, 255, 195);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  height: 100vh;
+}
+
+.payment-form h2{
+    margin: 10px 0;
+    text-align: center;
+}

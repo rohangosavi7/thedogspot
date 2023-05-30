@@ -1,0 +1,619 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pet adoption portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- css files -->
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/adopt-pet.css" />
+
+    <!-- Js files -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.6.min.js"></script>
+
+    <!-- Header area starts -->
+    <script>
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+    <!-- scroll to top -->
+
+    <button onclick="topFunction()" id="scrollToTopButton" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- header section -->
+    <div id="header">
+      <script>
+        $(function () {
+          $("#header").load("header.html");
+        });
+      </script>
+    </div>
+    <section class="ap-header-bg" id="home">
+      <div class="ap-header-col1">
+        <h2>They also need</h2>
+        <h3>A sweet Home</h3>
+      </div>
+      <!-- aps-header-col1 -->
+      <div class="clear"></div>
+      <!--clear-->
+    </section>
+    <!--ap-header-bg-->
+
+    <!-- About us -->
+    <section class="ap-about-section">
+      <h2 id="ap-heading">Your Pet Adoption Journey with TheDogSpot</h2>
+
+      <div class="ap-about" id="hero">
+        <!-- left about -->
+        <div class="ap-about-left">
+          <img src="images/adopt-pet/adopt-me.png" alt="" />
+        </div>
+
+        <!-- right about -->
+        <div class="ap-about-right">
+          <!-- cards 1 -->
+          <div class="ap-about-card">
+            <img src="images/adopt-pet/search.png" alt="" />
+            <div class="card-description">
+              <h2>Search Pet</h2>
+              <p>
+                Adopt a dog or cat who's right for you. Simply enter your city
+                above to start your search.
+              </p>
+            </div>
+          </div>
+
+          <!-- cards 2 -->
+          <div class="ap-about-card">
+            <img src="images/adopt-pet/connect.png" alt="" />
+            <div class="card-description">
+              <h2>Connect</h2>
+              <p>
+                Once you find a pet, click "show number" to get contact info for
+                their pet parent or rescue. Contact them to learn more about how
+                to meet and adopt the pet.
+              </p>
+            </div>
+          </div>
+
+          <!-- cards 3 -->
+          <div class="ap-about-card">
+            <img src="images/adopt-pet/adoption.png" alt="" />
+            <div class="card-description">
+              <h2>Adopt Love</h2>
+              <p>
+                The rescue or pet parents will walk you through their adoption
+                process. Prepare your home for the arrival of your fur baby to
+                help them adjust to their new family.
+              </p>
+            </div>
+          </div>
+
+          <!-- cards 4 -->
+          <div class="ap-about-card">
+            <img src="images/adopt-pet/vet-consult.png" alt="" />
+            <div class="card-description">
+              <h2>Free Vet Consultation</h2>
+              <p>
+                TheDogSpot will help your pet to settle down in its new home,
+                once you complete the Adoption journey reach out to us for free
+                vet consultation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ap-about section ends -->
+
+    <div class="hiw-container">
+      <h2 class="hiw-heading">How it works?</h2>
+      <div class="hiw-content-flex">
+        <div class="hiw-content-item">
+          <div class="svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              version="1.1"
+              viewBox="-1 0 136 136.21852"
+              width="40"
+            >
+              <g id="surface1">
+                <path
+                  d="M 93.148438 80.832031 C 109.5 57.742188 104.03125 25.769531 80.941406 9.421875 C 57.851562 -6.925781 25.878906 -1.460938 9.53125 21.632812 C -6.816406 44.722656 -1.351562 76.691406 21.742188 93.039062 C 38.222656 104.707031 60.011719 105.605469 77.394531 95.339844 L 115.164062 132.882812 C 119.242188 137.175781 126.027344 137.347656 130.320312 133.269531 C 134.613281 129.195312 134.785156 122.410156 130.710938 118.117188 C 130.582031 117.980469 130.457031 117.855469 130.320312 117.726562 Z M 51.308594 84.332031 C 33.0625 84.335938 18.269531 69.554688 18.257812 51.308594 C 18.253906 33.0625 33.035156 18.269531 51.285156 18.261719 C 69.507812 18.253906 84.292969 33.011719 84.328125 51.234375 C 84.359375 69.484375 69.585938 84.300781 51.332031 84.332031 C 51.324219 84.332031 51.320312 84.332031 51.308594 84.332031 Z M 51.308594 84.332031 "
+                  style="
+                    stroke: none;
+                    fill-rule: nonzero;
+                    fill: #494949;
+                    fill-opacity: 1;
+                  "
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <h4>Search</h4>
+          <p>Simply enter your city start your search</p>
+        </div>
+
+        <div class="hiw-content-item">
+          <div class="svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              viewBox="-21 -47 682.66669 682"
+              width="40"
+            >
+              <path
+                d="m552.011719-1.332031h-464.023438c-48.515625 0-87.988281 39.472656-87.988281 87.988281v283.972656c0 48.421875 39.300781 87.824219 87.675781 87.988282v128.871093l185.183594-128.859375h279.152344c48.515625 0 87.988281-39.472656 87.988281-88v-283.972656c0-48.515625-39.472656-87.988281-87.988281-87.988281zm-83.308594 330.011719h-297.40625v-37.5h297.40625zm0-80h-297.40625v-37.5h297.40625zm0-80h-297.40625v-37.5h297.40625zm0 0"
+                fill="#494949"
+              ></path>
+            </svg>
+          </div>
+          <h4>Meet</h4>
+          <p>Schedule your appointment to meet the pet you love</p>
+        </div>
+
+        <div class="hiw-content-item">
+          <div class="svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Layer_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 469.333 469.333"
+              style="enable-background: new 0 0 469.333 469.333"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M434.979,42.667H85.333c-1.053,0-2.014,0.396-3.001,0.693l-8.594-28.241C71.005,6.138,62.721,0,53.333,0H10.667     C4.776,0,0,4.776,0,10.667V32c0,5.891,4.776,10.667,10.667,10.667h26.865l66.646,219.01l-24.891,29.039     c-9.838,11.477-14.268,27.291-9.74,41.713c5.791,18.445,22.07,30.237,40.839,30.237H416c5.891,0,10.667-4.776,10.667-10.667     v-21.333c0-5.891-4.776-10.667-10.667-10.667H110.385l33.813-39.448c0.85-0.992,1.475-2.112,2.12-3.219h206.703     c16.533,0,31.578-9.548,38.618-24.507l74.434-158.17c2.135-4.552,3.26-9.604,3.26-14.615v-3.021     C469.333,58.048,453.952,42.667,434.979,42.667z"
+                      fill="#494949"
+                    ></path>
+                    <circle
+                      cx="128"
+                      cy="426.667"
+                      r="42.667"
+                      fill="#494949"
+                    ></circle>
+                    <circle
+                      cx="384"
+                      cy="426.667"
+                      r="42.667"
+                      fill="#494949"
+                    ></circle>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h4>Adopt</h4>
+          <p>Finally adopt the dog or cat you love</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="find-dog-section">
+      <!-- Adopt Dog-->
+      <div class="adopt-dog">
+        <h2>Adopt a Dog in your area (pune)</h2>
+
+        <!-- card 1 -->
+        <div class="adopt-dog-cards">
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog1.jpg" alt="" />
+            <h3>Max</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Brown</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog2.jpg" alt="" />
+            <h3>Buddy</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>White</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog3.jpg" alt="" />
+            <h3>Sheru</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>White</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog4.jpg" alt="" />
+            <h3>Tiger</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Brown</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog5.jpg" alt="" />
+            <h3>Jack</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog6.jpg" alt="" />
+            <h3>Hulk</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog7.jpg" alt="" />
+            <h3>Coco</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+
+          <!-- card 8 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/dog8.jpg" alt="" />
+            <h3>Captain</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+                class="adopt-btn"
+                type="button"
+                onclick="window.location.href='contact.html'"
+              >
+                Adopt
+              </button>
+            </div>
+          </div>
+
+          <!--  cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- cat adopt -->
+    <section class="find-dog-section">
+      <!-- Adopt Dog-->
+      <div class="adopt-dog">
+        <h2>Adopt a Cat in your area (pune)</h2>
+
+        <!-- card 1 -->
+        <div class="adopt-dog-cards">
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat1.jpg" alt="" />
+            <h3>Romeo</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Brown</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>Small 4 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat6.jpg" alt="" />
+            <h3>Sassy</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>White</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat3.jpg" alt="" />
+            <h3>Charlie</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>White</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat4.jpg" alt="" />
+            <h3>Luna</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Brown</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat5.jpg" alt="" />
+            <h3>Alice</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat2.jpg" alt="" />
+            <h3>Cutiee</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat7.jpg" alt="" />
+            <h3>Sweetie</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+
+          <!-- card 8 -->
+          <div class="ad-card">
+            <img id="ad-card-img" src="images/adopt-pet/cat8.jpg" alt="" />
+            <h3>Princess</h3>
+            <div class="ad-description">
+              <h4><span>Breed: </span>Dachshund</h4>
+              <h4><span>Color: </span>Black</h4>
+              <h4><span>Age: </span>Senior</h4>
+              <h4><span>Size: </span>(When grown) Small 11 kg</h4>
+              <h4><span>Sex: </span>Male</h4>
+              <button
+              class="adopt-btn"
+              type="button"
+              onclick="window.location.href='contact.html'"
+            >
+              Adopt
+            </button>
+            </div>
+          </div>
+
+          <!--  cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h2 class="footer-header"><span>The</span>DogSpot</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          eius expedita quo itaque at illum, temporibus, error incidunt iure,
+          rerum libero. Voluptas nostrum accusantium ex quia? Architecto minima
+          officiis dolore!
+        </p>
+      </div>
+
+      <div class="footer-centre">
+        <h2 class="footer-header">Get In Touch</h2>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>The Dog Spot</span>Near JSPM college, Hadapsar</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@thedogspot.com">support@thedogspot.com</a>
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:help@thedogspot.com">help@thedogspot.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-nav">
+          <h2 class="footer-header">Popular links</h2>
+          <ul class="footer-nav-list">
+            <!-- Setting the links to #! will ensure that no action takes place on click. -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="adopt-pet.html">Adopt a Pet</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
