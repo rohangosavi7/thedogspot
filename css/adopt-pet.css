@@ -81,6 +81,30 @@ header {
   text-shadow: 1px 1px 2px #000000d7;
 }
 
+
+@media(max-width:991px) and (max-width:768px){
+  .ap-header-col1{
+    width: 100%;
+    text-align: center;
+  }
+  .ap-header-col1 h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .ap-header-col1 h3 {
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .ap-header-bg {
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+
 /* ap Introduction */
 .ap-about {
   width: 100%;

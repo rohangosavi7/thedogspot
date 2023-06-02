@@ -350,11 +350,10 @@ button.shop-btn:hover {
   background: #ffffff;
   box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.3);
 }
-@media (max-width: 768px) {
-  .products-cards {
-    grid-template-columns: 1fr;
-  }
-}
+
+
+
+
 
 /* cart */
 main h2 {
@@ -502,4 +501,72 @@ button.button {
 }
 button.button:hover {
   box-shadow: 2px 2px 20px 3px #36d60ab9;
+}
+
+
+/* responsive */
+
+@media (max-width: 991px) and (max-width: 768px) {
+  .products-cards {
+    grid-template-columns: 1fr;
+  }
+  .product-header-bg {
+    height: 80vh;
+    background-size: cover;
+    background-position: 0 0;
+  }
+  .products-about-left img {
+    display: block;
+    margin: 20px 10px;
+    width: 20em;
+    height: 16em;
+  }
+  .products-about-right h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .product-about {
+    width: 100%;
+    min-height: auto;
+    padding: 30px 0;
+  }
+
+  .pr-card {
+    background-color: #97d77a;    
+    padding: 20px 5px 5px 5px;
+    margin: 10px;
+    border-radius: 5px 80px 5px 50px;
+    border: 1px solid #222429;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  .pr-card-tr {
+    background-color: #7de6d3;    
+    padding: 20px 5px 5px 5px;
+    margin: 10px;
+    border-radius: 5px 80px 5px 50px;
+    border: 1px solid #222429;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  .pr-card-wl {
+    background-color: #faae9f;
+    padding: 20px 5px 5px 5px;
+    margin: 10px;
+    border-radius: 5px 80px 5px 50px;
+    border: 1px solid #222429;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  .shopping-cart-section {
+    padding: 50px 10px;
+    background: #e4e4e4;
+    margin: 10px;
+    height: auto;
+  }
+  table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
 }

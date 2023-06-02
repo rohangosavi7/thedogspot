@@ -69,8 +69,6 @@ dark blue - #222429
 }
 
 
-
-
 /* nav-bar */
 nav {
   float: right;
@@ -209,7 +207,6 @@ nav ul li ul li a {
 .navigation {
   height: 70px;
   background: #ffffff;
-
 }
 .fixed-header {
   position: fixed;
@@ -223,7 +220,19 @@ nav ul li ul li a {
 .header-default {
   box-shadow: none;
 }
-
+@media(max-width:991px) and (max-width:768px){
+  .fixed-header {
+    box-shadow:none;
+  }
+  .nav-list li a img{
+    display: none;
+    opacity: 0;
+  }
+  .nav-list li a img:hover{
+    display: none;
+    opacity: 0;
+  }
+}
 
 .navigation.navigation-scroll {
   background-color: rgba(255, 255, 255, 0.1);
@@ -347,7 +356,7 @@ nav ul img {
 	padding: 30px 50px;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 .footer-distributed .footer-left,
 .footer-distributed .footer-right{
@@ -355,10 +364,7 @@ nav ul img {
 	vertical-align: top;
 }
 
-.footer-left, .footer-centre, .footer-right{
-	width: 33%;
-  padding: 20px;
-}
+
 /* Footer left */
 
 
@@ -449,12 +455,13 @@ nav ul img {
 .footer-nav-list{
   padding-top: 15px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 .footer-nav-list li{
   padding: 2px 0px;
 }
 .footer-nav-list a{
-  font-family: 'Open Sans';
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
@@ -463,28 +470,49 @@ nav ul img {
   color:  #eb6d07;
   text-decoration: underline 1px solid;
 }
-/* If you don't want the footer to be responsive, remove these media queries */
-@media(max-width:991px) {
-  .gallery {
-    min-height: auto;
-  }
+#copyright-text{
+  color: #f3f3f3;
+  font-size: 1rem;
+  margin: 20px 0;
+  text-align: center;
+  align-items: center;
 }
-@media(max-width:768px) {
-  .gallery {
+#copyright-text span a{
+  font-weight: bold;
+  color: #eb6d07;
+  text-decoration: none;
+
+}
+
+@media(max-width:991px) and (max-width:768px){
+  .footer-distributed {
+    flex-direction: column;
+    padding: 0;
+    margin: 5px 0;
+    text-align: center;
+  }
+  .footer-distributed .footer-left, .footer-distributed .footer-centre , .footer-distributed .footer-right{
     width: 100%;
-    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    place-items: center;
+    justify-items: center;
+  } 
+
+
+  .footer-right .footer-header{
+    font-size: 5px;
+    padding-top: 10px;
   }
 }
+
 @media (max-width: 786px) {
-	.footer-distributed{
-		font: bold 14px Open-Sans;
-	}
 
 	.footer-distributed .footer-left{
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
-		text-align: center;
+		text-align: left;
 	}
 
 }

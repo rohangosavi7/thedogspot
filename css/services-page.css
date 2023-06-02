@@ -90,12 +90,6 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .services {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Plan */
 
 .plan .box-container {
@@ -194,4 +188,20 @@ body {
 
 .plan .box-container .box .amount span {
   font-size: 3rem;
+}
+
+@media(max-width:991px) and (max-width:768px){
+  .services {
+    grid-template-columns: 1fr;
+    height: auto;
+    border-radius: 20% 1% 2% 30% / 2% 3% 5% 10%;
+
+  }
+  .services-container {
+    width: 100%;
+    height: auto;
+  }
+  .plan .box-container {
+    grid-template-columns: 1fr;
+  }
 }

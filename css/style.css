@@ -4,7 +4,6 @@ orange - #fd7e14
 dark blue - #222429
 */
 
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
 
@@ -14,17 +13,16 @@ dark blue - #222429
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
 
-
 /* animations */
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
@@ -131,14 +129,8 @@ header {
   background-position: center 0;
   background-repeat: no-repeat;
 }
-.header-bg img {
-  opacity: 100%;
-  width: 100%;
-  margin-top: 275px;
-  bottom: 0;
-}
 
-.white-top-wave{
+.white-top-wave {
   position: relative;
 }
 .custom-shape-divider-bottom-1684332773 {
@@ -159,23 +151,24 @@ header {
 }
 
 .custom-shape-divider-bottom-1684332773 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
   .custom-shape-divider-bottom-1684332773 svg {
-      width: calc(100% + 1.3px);
-      height: 96px;
+    width: calc(100% + 1.3px);
+    height: 96px;
   }
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
   .custom-shape-divider-bottom-1684332773 svg {
-      width: calc(132% + 1.3px);
-      height: 61px;
+    width: calc(132% + 1.3px);
+    height: 61px;
   }
+
 }
 
 .header-col1 {
@@ -199,6 +192,31 @@ header {
   font-size: 60px;
   line-height: 60px;
   margin: 15px 0px 5px 0px;
+}
+
+@media(max-width:991px) and (max-width:768px){
+  .header-col1{
+    width: 70%;
+    padding: 100px 10px;
+    right: 2%;
+    float: right;
+  }
+  .header-col1 h2 {
+    font-size: 35px;
+    line-height: 30px;
+    text-align: right;
+
+  }
+  .header-col1 h3 {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: right;
+  }
+  .header-bg {
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 /* quick services and about */
@@ -271,7 +289,7 @@ header {
 }
 .quick-card:hover {
   background-color: hsl(0, 0%, 20%);
-  box-shadow: 5px 5px 20px  #b47effb6;
+  box-shadow: 5px 5px 20px #b47effb6;
   transform: scale(1.05, 1.05);
 }
 .quick-card:hover #quick-card-img,
@@ -415,7 +433,6 @@ header {
 }
 .services {
   position: relative;
-  background-size: cover;
   background: url("../images/services-bg.jpg");
   width: 100%;
   height: 100vh;
@@ -442,7 +459,6 @@ header {
   height: 47vh;
   border: 1px solid #222429;
   z-index: 2;
-
   transition: all 0.4s ease;
   cursor: pointer;
 }
@@ -471,30 +487,46 @@ header {
   font-size: 15px;
   margin-bottom: 5px;
 }
-@media only screen and (max-width: 800px) {
-  .services-cards {
-    grid-template-columns: 1fr;
+
+@media only screen and (max-width: 991px) and (max-width: 768px) and (max-width: 786px) {
+  .services {
+    height: auto;
+    background-size: cover;
+    background-position: 0 center;
+    background-repeat: no-repeat;
   }
-  .services-text h4 {
-    font-size: 1rem;
+  .sc-card {
+    height: auto;
   }
-  .services-text h2 {
-    font-size: 2rem;
-  }
-  .services-text{
-    width: 80%;
-    
+  .purple-top-wave{
+    margin-bottom: 0;
   }
 }
 
-
-
+@media only screen and (max-width: 800px) {
+  .services-cards {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  .services-text h4 {
+    font-size: 1em;
+  }
+  .services-text h2 {
+    font-size: 1.9em;
+  }
+  .services-text {
+    width: 80%;
+  }
+  .services-heading{
+    padding-top: 3rem;
+  }
+}
 
 /* Contact form */
 .contact-form {
   position: relative;
   margin: 0;
-  padding: 5px;
+  padding: 20px;
   background-size: cover;
   background-image: url("../images/dog-yellow.jpg");
   height: auto;
@@ -740,17 +772,7 @@ fieldset {
   text-decoration: underline 1px solid;
 }
 /* If you don't want the footer to be responsive, remove these media queries */
-@media (max-width: 991px) {
-  .gallery {
-    min-height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .gallery {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
-}
+
 @media (max-width: 786px) {
   .footer-distributed {
     font: bold 14px Open-Sans;
@@ -763,41 +785,3 @@ fieldset {
     text-align: center;
   }
 }
-
-
-
-/* coloor changing css */
-
-/* p {
-  -webkit-animation: color-change 1s infinite;
-  -moz-animation: color-change 1s infinite;
-  -o-animation: color-change 1s infinite;
-  -ms-animation: color-change 1s infinite;
-  animation: color-change 1s infinite;
-}
-
-@-webkit-keyframes color-change {
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color: red; }
-}
-@-moz-keyframes color-change {
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color: red; }
-}
-@-ms-keyframes color-change {
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color: red; }
-}
-@-o-keyframes color-change {
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color: red; }
-}
-@keyframes color-change {
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color: red; }
-} */

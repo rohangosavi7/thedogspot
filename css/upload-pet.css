@@ -21,7 +21,6 @@
 
 body{
   background-color: #252525;
-
 }
 /*Common clasess*/
 
@@ -127,7 +126,6 @@ header {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-
     box-shadow: 3px 2px 4px #222429;
     background: linear-gradient(90deg, #4CAF50, #33b837);
     transition: all 0.4s ease;
@@ -138,3 +136,11 @@ header {
     box-shadow:2px 2px 10px 2px #32323293;
   }
   
+
+  @media(max-width:991px) and (max-width:768px){
+    .container {
+      max-width: 500px;
+      margin: 20px 10px;
+      padding: 30px;
+    }
+  }
