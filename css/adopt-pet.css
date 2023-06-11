@@ -8,7 +8,10 @@
 }
 
 
-
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -38,9 +41,6 @@ p {
   color: #f2f2f2;
 }
 
-body{
-  overflow-x: hidden;
-}
 
 /* header*/
 header {

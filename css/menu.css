@@ -272,12 +272,13 @@ nav ul img {
 .brand a,
 .brand a:visited {
   text-decoration: none;
-  color: #fd7e14;
+  color: #ff7300;
   font-weight: 600;
   letter-spacing: 1px;
   font-family: 'Open Sans';
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 2px 2px 5px #d0d0d0a7;
   transition:  0.4s ease-in-out;
+
 }
 
 .brand a:hover {

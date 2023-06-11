@@ -8,6 +8,12 @@
   font-family: "Open Sans";
 }
 
+
+body {
+  background-color: #221e1f;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -34,11 +40,7 @@ p {
   color: #f2f2f2;
 }
 
-body {
-  background-color: #221e1f;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
+
 /* header*/
 header {
   animation-duration: 1s;

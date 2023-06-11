@@ -7,6 +7,12 @@
   font-family: "Open Sans";
 }
 
+
+body{
+  background-color: #252525;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +23,6 @@
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
-
-body{
-  background-color: #252525;
 }
 /*Common clasess*/
 
